@@ -1,0 +1,22 @@
+{
+    "name": "carbide",
+    "displayName": "Carbide",
+    "description": "simple dark theme with few colors",
+    "version": "0.0.1",
+    "publisher": "scriptar",
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Carbide",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Carbide-color-theme.json"
+            }
+        ]
+    }
+}
