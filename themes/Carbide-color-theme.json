@@ -40,7 +40,7 @@
     // This is the main background color
     "editor.background": "#101010",
     // this is the main text colour
-    "editor.foreground": "#35aedd",
+    "editor.foreground": "#aaa",
 
     // Currently found item (CTRL-F3)
     "editor.findMatchBackground": "#3e92ff86",
@@ -299,17 +299,27 @@
       }
     },
     {
-      "name": "Constant",
+      "name": "Constant", //numbers, true/false
       "scope": "constant",
       "settings": {
-        "foreground": "#a4e2ff"
+        "foreground": "#fc4"
+      }
+    },
+    {
+      "name": "String",
+      "scope": [
+        "string",
+        "punctuation.definition.string"
+      ],
+      "settings": {
+        "foreground": "#fc4" //a4e2ff
       }
     },
     {
       "name": "Entity",
       "scope": "entity",
       "settings": {
-        "foreground": "#35aedd"//35aedd
+        "foreground": "#aaa"//35aedd
       }
     },
     {
@@ -318,11 +328,6 @@
       "settings": {
         "foreground": "#a4e2ff"//35aedd
       }
-    },      {
-        "scope": "punctuation",
-        "settings": {
-            "foreground": "#35aedd"
-        }
     },
     {
       "name": "Invalid",
@@ -356,14 +361,14 @@
       "name": "Punctuation",
       "scope": "punctuation",
       "settings": {
-        "foreground": "#35aedd"
+        "foreground": "#aaa"
       }
     },
     {
       "name": "Punctuation Parameters",
       "scope": "punctuation.definition.parameters",
       "settings": {
-        "foreground": "#35aedd"
+        "foreground": "#aaa"
       }
     },
     {
@@ -392,16 +397,6 @@
       "scope": "storage.type.function.arrow",
       "settings": {
         "foreground": "#35aedd"
-      }
-    },
-    {
-      "name": "String",
-      "scope": [
-        "string",
-        "punctuation.definition.string"
-      ],
-      "settings": {
-        "foreground": "#a4e2ff"
       }
     },
     {
