@@ -38,14 +38,14 @@
 
     // editor
     // This is the main background color
-    "editor.background": "#101010",
+    "editor.background": "#151515",
     // this is the main text colour
     "editor.foreground": "#aaa",
 
     // Currently found item (CTRL-F3)
-    "editor.findMatchBackground": "#3e92ff86",
+    "editor.findMatchBackground": "#4998ff98",
     // Other Found Items in the document
-    "editor.findMatchHighlightBackground": "#245faca8",
+    "editor.findMatchHighlightBackground": "#245facb9",
     "editor.findRangeHighlightBackground": "#243E51",
 
     // When you hover over something and a popup shows, this highlights that thing
@@ -54,9 +54,9 @@
     "editor.inactiveSelectionBackground": "#3A3D41",
 
     // current line styles
-    "editor.lineHighlightBackground": "#1F4662",
-    "editor.lineHighlightBorder": "#2d5d80",
-    "editor.rangeHighlightBackground": "#1c3a50",
+    "editor.lineHighlightBackground": "#53535388",
+    "editor.lineHighlightBorder": "#53535300",
+    "editor.rangeHighlightBackground": "#53535388",
 
     // selected Text colours
     // This is the standard Select colour
@@ -71,7 +71,7 @@
     // and this one is the rest of them
     "editor.wordHighlightBackground": "#FFFFFF0D",
 
-    "editorBracketMatch.background": "#101010",
+    "editorBracketMatch.background": "#151515",
     "editorBracketMatch.border": "#68b6ff",
     "editorCodeLens.foreground": "#aaa",
     "editorCursor.foreground": "#68b6ff",
@@ -92,10 +92,10 @@
     "editorGroup.dropBackground": "#555",
     // editorGroupHeader
     "editorGroupHeader.noTabsBackground": "#f00",
-    "editorGroupHeader.tabsBackground": "#151515",
+    "editorGroupHeader.tabsBackground": "#121212",
     "editorGroupHeader.tabsBorder": "#202020",
     // editorHoverWidget
-    "editorHoverWidget.background": "#151515",
+    "editorHoverWidget.background": "#121212",
     "editorHoverWidget.border": "#555",
     "editorIndentGuide.background": "#555",
     "editorLineNumber.foreground": "#aaa",
@@ -120,7 +120,7 @@
     "editorWarning.border": "#ffffff00",
     "editorWarning.foreground": "#68b6ff",
     "editorWhitespace.foreground": "#ffffff1a",
-    "editorWidget.background": "#101010",
+    "editorWidget.background": "#121212",
     "editorWidget.border": "#555",
     "errorForeground": "#A22929",
     // extensionButton
@@ -130,7 +130,7 @@
     "focusBorder": "#777",
     "foreground": "#aaa",
     // input
-    "input.background": "#101010",
+    "input.background": "#121212",
     "input.border": "#555",
     "input.foreground": "#ffc600",
     "input.placeholderForeground": "#999",
@@ -142,9 +142,9 @@
     "inputValidation.warningBackground": "#193549",
     "inputValidation.warningBorder": "#ffc600",
     // list
-    "list.activeSelectionBackground": "#101010",
+    "list.activeSelectionBackground": "#121212",
     "list.activeSelectionForeground": "#aaa",
-    "list.dropBackground": "#101010",
+    "list.dropBackground": "#121212",
     "list.focusBackground": "#555",
     "list.focusForeground": "#aaa",
     "list.highlightForeground": "#60a0dd",
@@ -260,9 +260,10 @@
     "terminal.ansiBrightMagenta": "#fb94ff",
     "terminal.ansiBrightCyan": "#80fcff",
     "terminal.ansiBrightWhite": "#193549",
-    "terminal.background": "#070707",
+    "terminal.background": "#121212",
     "terminal.foreground": "#aaa",
-    "terminalCursor.background": "#60a0dd",
+    "terminalCursor.background": "#242c33",
+    //"terminalCursor.foreground": "#e6db74",
     "terminalCursor.foreground": "#60a0dd",
     // Git status colors in File Explorer
     "gitDecoration.modifiedResourceForeground": "#ffc600",
@@ -273,7 +274,7 @@
     // textBlockQuote
     "textBlockQuote.background": "#202020",
     "textBlockQuote.border": "#555",
-    "textCodeBlock.background": "#101010",
+    "textCodeBlock.background": "#151515",
     "textLink.activeForeground": "#0088ff",
     "textLink.foreground": "#0088ff",
     "textPreformat.foreground": "#ffc600",
@@ -302,7 +303,7 @@
       "name": "Constant", //numbers, true/false
       "scope": "constant",
       "settings": {
-        "foreground": "#fc4"
+        "foreground": "#aaa"
       }
     },
     {
@@ -312,21 +313,21 @@
         "punctuation.definition.string"
       ],
       "settings": {
-        "foreground": "#fc4" //a4e2ff
+        "foreground": "#e6db74" //fe5
       }
     },
     {
       "name": "Entity",
       "scope": "entity",
       "settings": {
-        "foreground": "#aaa"//35aedd
+        "foreground": "#aaa"//normal variables and string of namespace, class name
       }
     },
     {
       "name": "Entity",
       "scope": "entity.name.function",
       "settings": {
-        "foreground": "#a4e2ff"//35aedd
+        "foreground": "#aaa"//functions 'Main' and WriteLine on Console, but not Console
       }
     },
     {
@@ -340,19 +341,24 @@
       "name": "Keyword",
       "scope": "keyword",
       "settings": {
-        "foreground": "#35aedd"
+        "foreground": "#aaa" //region, namespace, types (class, int, string, var, new, =, +, *, if, for)
+      }
+    },
+    {
+      "name": "Keyword",
+      "scope": [
+        "keyword.other.var.cs",
+        "keyword.type.cs",
+        "keyword.other.delegate.cs",
+        "keyword.other.class.cs",
+        "keyword.other.namespace.cs"
+      ],
+      "settings": {
+        "foreground": "#35aedd" //region, namespace, types (class, int, string, var, new, =, +, *, if, for)
       }
     },
     {
       "name": "Meta",
-      "scope": "meta",
-      "settings": {
-        "foreground": "#35aedd"
-      }
-    },
-    {
-      "name": "Meta Brace",
-      "scope": "meta.brace",
       "settings": {
         "foreground": "#35aedd"
       }
@@ -361,7 +367,7 @@
       "name": "Punctuation",
       "scope": "punctuation",
       "settings": {
-        "foreground": "#aaa"
+        "foreground": "#aaa" // {}():;,.
       }
     },
     {
@@ -375,7 +381,7 @@
       "name": "Punctuation tag",
       "scope": "punctuation.definition.tag",
       "settings": {
-        "foreground": "#009000"
+        "foreground": "#009000" // the brackets in <summary> in the comment block
       }
     },
     {
@@ -389,7 +395,7 @@
       "name": "Storage",
       "scope": "storage",
       "settings": {
-        "foreground": "#35aedd"
+        "foreground": "#35aedd" //scope (private, public), const, Uri, RegEx, implements interface
       }
     },
     {
@@ -434,7 +440,7 @@
       "name": "Variable",
       "scope": "variable",
       "settings": {
-        "foreground": "#35aedd"
+        "foreground": "#aaa"//35aedd //variables being used, Console, methods on objects ()
       }
     },
     {
@@ -458,7 +464,7 @@
       "name": "[CSS] - Element Selector",
       "scope": "entity.name.tag",
       "settings": {
-        "foreground": "#009000"
+        "foreground": "#009000" //in a comment block it would be 'summery' in ///<summary>
       }
     },
     {
@@ -524,21 +530,21 @@
       "scope": "text.html.basic entity.other",
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#ffc600"
+        "foreground": "#e6db74"
       }
     },
     {
       "name": "[HTML] - Script Tag",
       "scope": "meta.tag.metadata.script.html entity.name.tag.html",
       "settings": {
-        "foreground": "#ffc600"
+        "foreground": "#e6db74"
       }
     },
     {
       "name": "[HTML] - Quotes. these are a slightly different colour because expand selection will then not include quotes",
       "scope": "punctuation.definition.string.begin, punctuation.definition.string.end",
       "settings": {
-        "foreground": "#a4e2ff"
+        "foreground": "#e6db74"
       }
     },
     {
